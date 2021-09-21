@@ -1,0 +1,49 @@
+@import './configs/settings';
+@import './fragments/header';
+@import './fragments/footer';
+
+@import './fragments/body';
+
+@import './fragments/card';
+
+  
+.snap-container {
+  // margin-top: 100px;
+  height: 100vh;
+  overflow: auto;  
+  scroll-snap-type: y mandatory;  
+  // overflow: hidden;
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.snap-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.snap-section {
+
+  // delete
+  // border: 1px solid black;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+
+  margin-top: 20px;
+
+  // scroll-margin-top: 135px;
+  scroll-padding-top: 135px;
+
+}
+.content {
+  padding-top: 60px;
+}

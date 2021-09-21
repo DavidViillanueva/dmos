@@ -1,0 +1,21 @@
+.container {
+  // min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.snapContainer {
+  height: 90vh;
+  overflow: auto;  
+  scroll-snap-type: y mandatory;  
+}
+
+.snapSection {
+  scroll-padding-top:30px;
+  scroll-snap-align: start;
+  min-height: 60vh;
+}

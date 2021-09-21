@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .nav-link  {
+      color: black;
+    }
+  }
+
+body.dark-mode {
+    background-color: black;
+    color: $white-text;
+    .card {
+      background-color: $grey-dark-mode;
+      box-shadow: none;
+    }
+
+    .header {
+        background-color: black;
+    }
+
+    .sub-header {
+        background-color: black;
+    }
+
+    .nav-link  {
+      color: $white-text;
+      &:hover {
+        color: $link;
+      }
+      &:focus {
+        color: $link;
+      }
+    }
+
+    .card__container{
+      background-color: lighten($color: $bg-dark-mode, $amount: 10);
+    }
+  }

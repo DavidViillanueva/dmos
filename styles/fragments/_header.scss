@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    height: 60px;
+
+    background: white;
+    align-items: center;
+    min-height: 60px;
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style:none;
+        width: 100%;
+        padding: 0px 40px 0px 40px;
+    }
+
+}
+
+.sub-header{
+    background: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+    height: 35px
+}
+
+.nav {
+    position: fixed;
+}

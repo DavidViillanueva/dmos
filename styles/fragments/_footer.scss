@@ -1,0 +1,8 @@
+footer {
+    scroll-snap-stop: always;
+	scroll-snap-align: end;
+
+    & ul {
+        position: unset !important;
+    }
+}
