@@ -4,11 +4,11 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 
 import React from 'react'
-import _footer from './_footer'
+import _footer from '../components/Footer'
 
 import { useTranslation } from 'next-i18next';
 import BackgroundStatic from '../components/BackgroundStatic';
-const contact = () => {
+const Contact = () => {
   
     const { t } = useTranslation('common');
 
@@ -55,4 +55,4 @@ export async function getStaticProps({ locale }:any) {
     };
 }
 
-export default contact;
+export default Contact;

@@ -2,7 +2,7 @@ import React from 'react'
 import { useAnchor } from '../hooks/useAnchor'
 
 import { useTranslation } from 'next-i18next';
-import Image from './_image';
+import Image from './Image';
 
 interface sectionInterface {
     title: string,

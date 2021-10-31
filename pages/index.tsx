@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 import { useTranslation } from 'next-i18next';
 
-import _footer from './_footer'
+import _footer from '../components/Footer'
 
 import ServiceCard from '../components/index/ServiceCard';
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import { useAnchor } from '../hooks/useAnchor';
-import _footer from './_footer';
-import Section from './_section'
+import _footer from '../components/Footer';
+import Section from '../components/Section'
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-const services = () => {
+const Services = () => {
     const { goto } = useAnchor();
     
     return (<div>
@@ -65,4 +65,4 @@ export async function getStaticProps({ locale }:any) {
   };
 }
 
-export default services
+export default Services
