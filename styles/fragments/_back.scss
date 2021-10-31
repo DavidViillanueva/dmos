@@ -1,0 +1,163 @@
+.section {
+    transform-origin: center top;
+    transform: scaleY(calc(1 - 0.4));
+  }
+  
+  .section > * {
+    transform-origin: center top;
+    transform: scaleY(calc(1 / (1 - 0.4)));
+  }
+
+.image-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  .image-container .background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+  }
+  
+  .image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .background {
+      margin: 70px 0px 70px 0px;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .circle {
+  }
+  
+  .circle::before {
+    background-color: $bg-light-mode ;
+  }
+
+.circle1 {
+    position: absolute;
+    top: 200px;
+    right: -40px;
+    width: 350px;
+    height: 350px;
+    background: $circleBack;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1::before {
+    content: '';
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}   
+  
+.circle2 {
+    position: absolute;
+    left: -100px;
+    width: 350px;
+    height: 350px;
+    background: $circleBack;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle2::before {
+    content: '';
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}  
+  
+.circle3 {
+    position: absolute;
+    top: 60vh;
+    right: 40vw;
+    width: 245px;
+    height: 245px;
+    background: $circleBack;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle3::before {
+    content: '';
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+  
+.circle4 {
+    position: absolute;
+    left: 200px;
+    // top: 120vh;
+    bottom: 900px;
+    width: 187px;
+    height: 187px;
+    background: $circleBack;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle4::before {
+    content: '';
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.circle5 {
+  position: absolute;
+    bottom: 700px;
+    right: 10%;
+    width: 245px;
+    height: 245px;
+    background: $circleBack;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle5::before {
+   content: '';
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+
+  

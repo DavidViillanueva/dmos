@@ -1,5 +1,6 @@
 import React from 'react'
 import ThemeChanger from './_themeChanger'
+import Link from 'next/link'
 
 const _footer = () => {
     return (
@@ -16,8 +17,16 @@ const _footer = () => {
             <li className="ms-3">
                 <ThemeChanger />
             </li>
-            <li className="ms-3"><a className="text-muted" href="#"><svg className="bi" width="24" height="24"><use href="#instagram"></use></svg></a></li>
-            <li className="ms-3"><a className="text-muted" href="#"><svg className="bi" width="24" height="24"><use href="#facebook"></use></svg></a></li>
+            <li className="ms-3 nav-item">
+                <Link  href="#" locale="en">
+                    <a className="nav-link">En</a>
+                </Link>
+            </li>
+            <li className="ms-3 nav-item">
+                <Link  href="#" locale="es">
+                    <a className="nav-link">Es</a>
+                </Link>
+            </li>
             </ul>
         </footer>
 </div>

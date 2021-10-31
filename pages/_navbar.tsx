@@ -1,29 +1,34 @@
-import React from 'react'
-import { useAnchor } from '../hooks/useAnchor';
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const _navbar = () => {
-    const { goto } = useAnchor();
-    return (
 
+    const { t } = useTranslation('common')
+
+    return (
+    
+    <div>
         <ul className="nav justify-content-center header">
+            <h2 className="icon">Dmos</h2>
             <li className="nav-item">
                 <Link href="/">
-                    <a className="nav-link" >Home</a>
+                    <a className="nav-link" >{t('header.home')}</a>
                 </Link>
             </li>
             <li className="nav-item">
             <Link href="/services">
-                <a className="nav-link">Services</a>
+                <a className="nav-link">{t('header.services')}</a>
             </Link>
             
             </li>
             <li className="nav-item">
                 <Link href="/contact">
-                    <a className="nav-link" >Contact</a>
+                    <a className="nav-link" >{t('header.contact')}</a>
                 </Link>
             </li>
         </ul>
+    </div>
     )
 }
 

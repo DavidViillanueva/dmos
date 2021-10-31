@@ -3,6 +3,8 @@ import { useAnchor } from '../hooks/useAnchor';
 import _footer from './_footer';
 import Section from './_section'
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 const services = () => {
     const { goto } = useAnchor();
     
@@ -19,6 +21,9 @@ const services = () => {
             <li className="nav-item">
               <a href="#third" onClick={ goto } className="nav-link" > Third </a>
             </li>
+            <li className="nav-item">
+              <a href="#fourth" onClick={ goto } className="nav-link" > Forth(?) </a>
+            </li>
         </ul>
     
         <div className="snap-container">
@@ -30,18 +35,34 @@ const services = () => {
           <Section 
             title="second"
             id="second"
-            // bg="blue"
+            horientation="left"
           />
           <Section 
             title="third"
             id="third"
             // bg="cyan"
           />
+          <Section 
+            title="fourth"
+            id="fourth"
+            horientation="left"
+          />
           <_footer /> 
         </div>
 
         </div>
       )
+}
+
+export async function getStaticProps({ locale }:any) {
+
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      // Will be passed to the page component as props
+    },
+  };
 }
 
 export default services

@@ -1,0 +1,18 @@
+{   
+    "title": "Bienvenido",
+    "hi": "Hola!",
+    "welcome_message": "Bienvenido a nuestro sitio, espero que encuentres lo que estas buscando!",
+    "our_services":"Nuestros servicios",
+    "services_info":"Podes encontrar mas informacion en la pestaña de servicios",
+    "header": {
+        "home":"Inicio",
+        "services":"Servicios",
+        "contact":"Contacto"
+    },
+    "contact": {
+        "title":"Ponete en contacto con nosotros",
+        "help":"Desliza el mouse sobre nuestra tarjeta...",
+        "phoneLabel":"Telefono"
+    }
+
+}

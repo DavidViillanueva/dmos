@@ -13,10 +13,21 @@
     text-align: center;
     width: 100%;
 
-    & h1{
-        margin-bottom: 40px;
-        width: 100%;
-        text-align: left;
+}
+
+.card__title {
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: left;
+    
+    &.reverse {
+        text-align: right;
+    }
+}
+
+.row {
+    &.reverse {
+        flex-direction: row-reverse;
     }
 }
 

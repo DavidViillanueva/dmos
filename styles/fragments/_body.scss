@@ -3,16 +3,16 @@ body {
     width: 100vw;
     margin: 0px;
     padding: 0px;
-    overflow-y: hidden;
+    // overflow-y: hidden;
     overflow-x: hidden;
-
+    background-color: $bg-light-mode !important;
     .nav-link  {
       color: black;
     }
   }
 
 body.dark-mode {
-    background-color: black;
+    background-color: $bg-dark-mode;
     color: $white-text;
     .card {
       background-color: $grey-dark-mode;
@@ -20,11 +20,11 @@ body.dark-mode {
     }
 
     .header {
-        background-color: black;
+        background-color: $bg-dark-mode;
     }
 
     .sub-header {
-        background-color: black;
+        background-color: $bg-dark-mode;
     }
 
     .nav-link  {
@@ -37,7 +37,24 @@ body.dark-mode {
       }
     }
 
-    .card__container{
+    .card__container {
       background-color: lighten($color: $bg-dark-mode, $amount: 10);
+    }
+
+    .circle::before {
+      background-color: $bg-dark-mode;
+    }
+
+    
+    .background {
+      background-color: $bg-dark-mode;
+    }
+
+    .image-container {
+      background-color: $bg-dark-mode;
+    }
+
+    .snap-container {
+      background-color: $bg-dark-mode;
     }
   }

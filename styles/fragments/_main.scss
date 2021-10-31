@@ -1,0 +1,98 @@
+.main__content {    
+    width: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.main__grid {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.main__body {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.main_gridelement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    
+    transition: 300ms all;
+
+
+    .main_gridelementImage {
+        border-radius: 7px;
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        background-image: url('https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg');
+        background-size: cover;
+    }
+    
+    .main__gridelementOverlay {
+        border-radius: 7px;
+        position: absolute;
+        width: inherit;
+        height: inherit;
+    
+        backdrop-filter: blur(8px);
+        transition: all 0.5s;
+
+        clip-path: polygon(0 calc(100% - 50px), 100% calc(100% - 50px), 100% 100%, 0% 100%);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &:hover{
+            .main__gridelementOverlay {
+            clip-path: polygon(0 0,100% 0,100% 100%,0% 100%); 
+          }
+    }
+    .hidden-text {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        color: white;
+      }
+    .visible-text {
+        flex: 0 0 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: white;
+    }
+}
+

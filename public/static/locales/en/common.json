@@ -1,0 +1,18 @@
+{
+      "title": "Welcome",
+      "hi": "Hi there!",
+      "welcome_message": "Welcome to our page, I hope that you find that you are looking for!",
+      "our_services":"Our Services",
+      "services_info":"You can find more info about our services in the Services page",
+      "header": {
+        "home":"Home",
+        "services":"Services",
+        "contact":"Contact"
+      },
+      "contact": {
+          "title":"Get in contact with us!",
+          "help":"Hover the mouse in our card to see...",
+          "phoneLabel":"Phone"
+          
+      }
+  }
